@@ -1,0 +1,23 @@
+.about-section {
+  background: rgba(0, 0, 0, 0.03) 0 0 no-repeat padding-box;
+  .image img {
+    width: 100%;
+  }
+  h3 {
+    @extend %normal-font;
+    font-size: 32px;
+
+    margin-top: 36px;
+  }
+  .text {
+    padding-left: 80px;
+    p {
+      @extend %light-font;
+      font-size: 14px;
+    }
+    .common-button {
+      .arrow {
+      }
+    }
+  }
+}
