@@ -14681,6 +14681,15 @@ body {
   margin-top: 34px;
   margin-bottom: 20px;
 }
+.contacts-section .salon-card {
+  padding-bottom: 118px;
+}
+.contacts-section .salon-card .arrowed-link {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-bottom: 80px;
+}
 .contacts-section .salon-card .image {
   max-height: 150px;
   overflow: hidden;
@@ -14702,6 +14711,7 @@ body {
 .contacts-section .salon-card .phone .text,
 .contacts-section .salon-card .clock .text {
   font-size: 14px;
+  line-height: 16px;
   letter-spacing: -0.39px;
 }
 .contacts-section .salon-card .adress {
@@ -14709,7 +14719,11 @@ body {
 }
 .contacts-section .salon-card .adress .text {
   font-size: 14px;
+  line-height: 16px;
   letter-spacing: -0.39px;
+}
+.contacts-section .salon-card .icon {
+  line-height: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

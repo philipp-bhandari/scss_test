@@ -12,6 +12,15 @@
         margin-bottom: 20px;
     }
     .salon-card {
+        padding-bottom: 118px;
+
+        .arrowed-link {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 0;
+
+            margin-bottom: 80px;
+        }
         .image {
             max-height: 150px;
             overflow: hidden;
@@ -36,6 +45,7 @@
             .text {
                 @extend %bold-font;
                 font-size: 14px;
+                line-height: 16px;
                 letter-spacing: -0.39px;
             }
         }
@@ -45,12 +55,12 @@
             .text {
                 @extend %normal-font;
                 font-size: 14px;
+                line-height: 16px;
                 letter-spacing: -0.39px;
             }
         }
-        // .icon,
-        // .text {
-        //     padding: 0;
-        // }
+        .icon {
+            line-height: 15px;
+        }
     }
 }
