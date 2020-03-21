@@ -7,6 +7,7 @@
     h3 {
         @extend %normal-font;
         font-size: 32px;
+        max-width: 550px;
 
         margin-top: 36px;
         margin-bottom: 12px;
@@ -39,6 +40,51 @@
                     background-image: url("/images/menu_cars/white_link_arrow.png"); // TODO поставить svg
                 }
             }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .image {
+            background-position: left;
+            background-size: cover;
+        }
+        .text {
+            padding-left: 30px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .image {
+            height: 384px;
+            background-image: url("/images/about_sec/1_big.png");
+            background-position: 5% 5%;
+        }
+        h3 {
+            margin-top: 19px;
+            font-size: 28px;
+            line-height: 33px;
+            letter-spacing: 0.54px;
+        }
+        .text {
+            padding-left: 37px;
+            p {
+                line-height: 17px;
+                letter-spacing: 0.27px;
+            }
+            .last_p {
+                margin-bottom: 6px;
+            }
+            .common-button {
+                max-width: 202px;
+            }
+            .underline-link {
+                letter-spacing: -0.3px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .image {
+            height: 292px;
+            background-image: url("/images/about_sec/1_big.png");
+            background-position: 5% 5%;
         }
     }
 }

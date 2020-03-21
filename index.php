@@ -3,7 +3,6 @@
 <head>
 <title>Volvo</title>
 <meta name="viewport" content="width=device-width">
-
 <!-- JQUERY -->
 <script
 src="https://code.jquery.com/jquery-2.2.4.min.js"
