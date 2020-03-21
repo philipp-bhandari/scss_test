@@ -33,7 +33,7 @@
   }
 }
 .arrowed-link {
-  font-family: "VolvoNovum";
+  @extend %normal-font;
   display: flex;
   margin-bottom: 8px;
   .link {
@@ -53,7 +53,7 @@
 }
 
 .underline-link {
-  font-family: "VolvoNovum";
+  @extend %normal-font;
   margin-bottom: 8px;
   cursor: pointer;
 

@@ -15,18 +15,16 @@
       font-size: 40px;
     }
     .name2 {
-      font-family: "VolvoNovum";
+      @extend %light-font;
       font-size: 10px;
       letter-spacing: -0.28px;
-      font-weight: 300;
 
       margin-top: 11px;
       margin-left: 4px;
       margin-right: 14px;
     }
     .price {
-      font-family: "VolvoNovum";
-      font-weight: 400;
+      @extend %normal-font;
 
       margin-top: 3px;
       font-size: 15px;
@@ -42,9 +40,8 @@
 .models-section {
   background: rgba(0, 0, 0, 0.03) 0 0 no-repeat padding-box;
   h2 {
+    @extend %medium-font;
     text-align: center;
-    font-family: "VolvoNovum";
-    font-weight: 500;
     letter-spacing: 0.62px;
     color: #000000;
 
