@@ -1,7 +1,9 @@
 .services-section {
+    padding-bottom: 25px;
+
     h2 {
         @extend %medium-font;
-        padding-top: 30px;
+        padding-top: 54px;
         font-size: 32px;
         line-height: 38px;
         letter-spacing: 0.62px;
@@ -18,20 +20,62 @@
         line-height: 23px;
         width: 754px;
         margin: 0 auto;
-        padding-bottom: 18px;
-    }
-
-    .col {
-        padding-bottom: 45px;
-    }
-
-    img {
-        padding-left: 30px;
+        padding-bottom: 40px;
     }
 
     .servise {
+        padding: 0;
+        padding-left: 80px;
+        padding-bottom: 30px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .servise_text {
         display: inline-block;
-        max-width: 387px;
+        max-width: 393px;
         padding-right: 30px;
+        padding-left: 10px;
+        margin: 0;
+        @extend %light-font;
+        text-align: left;
+        letter-spacing: 0.31px;
+        color: #000000;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 50px;
+
+        h2 {
+            padding-top: 30px;
+        }
+
+        .text {
+            padding-bottom: 20px;
+        }
+
+        .servise {
+            padding-left: 30px;
+        }
+    }
+
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 50px;
+
+        h2 {
+            padding-top: 30px;
+        }
+
+        .text {
+            padding-bottom: 20px;
+        }
+
+        .servise {
+            padding-left: 30px;
+        }
     }
 }
