@@ -1,0 +1,53 @@
+.common-button {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background: #fff;
+	border: 1px solid $base-blue;
+	color: $base-blue;
+	padding: 13px 65px 15px;
+	font-size: 16px;
+	line-height: 1;
+	transition: .15s ease-in-out;
+	background: none;
+	&:hover {
+		color: #fff;
+		background: $base-blue;
+		text-decoration: none;
+	}
+
+	&.-white {
+		background: transparent;
+		border: 1px solid #fff;
+		color: #fff;
+		&:hover {
+			background: #000;
+			border-color: #000;
+		}
+	}
+}
+.arrowed-link {
+	font-family: 'VolvoNovum';
+	display: flex;
+	margin-bottom: 8px;
+	.link {
+		color: $link-blue;
+		text-decoration: none;
+	}
+	.arrow {
+		background-image: url("/images/menu_cars/link_arrow.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		margin-left: 10px;
+		margin-top: 8px;
+		width: 8px;
+		height: 12px;
+	}
+}
