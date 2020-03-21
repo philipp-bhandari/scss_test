@@ -3,6 +3,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
 @import "colors";
 @import "layout";
 @import "fonts";
@@ -11,3 +15,4 @@
 @import "about-section";
 @import "services-section";
 @import "models-section";
+@import "contacts-section";

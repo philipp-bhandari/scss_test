@@ -14454,19 +14454,25 @@ body {
   src: url("/fonts/volvo_fonts_new/VolvoNovum-Bold.otf");
   font-weight: 600;
 }
-.car-card .text .name2, .services-section .text, .about-section .text p {
+.contacts-section .salon-card .name, .car-card .text .name2, .services-section .text, .about-section .text p {
   font-family: "VolvoNovum";
   font-weight: 300;
 }
 
-.car-card .text .price, .about-section h3, .underline-link, .arrowed-link {
+.contacts-section .salon-card .adress .text, .car-card .text .price, .about-section h3, .underline-link, .arrowed-link {
   font-family: "VolvoNovum";
   font-weight: 400;
 }
 
-.models-section h2, .services-section h2 {
+.contacts-section h2, .models-section h2, .services-section h2 {
   font-family: "VolvoNovum";
   font-weight: 500;
+}
+
+.contacts-section .salon-card .phone .text,
+.contacts-section .salon-card .clock .text {
+  font-family: "VolvoNovum";
+  font-weight: 600;
 }
 
 ._space-between {
@@ -14531,7 +14537,6 @@ body {
 }
 
 .underline-link {
-  margin-bottom: 8px;
   cursor: pointer;
 }
 .underline-link .link {
@@ -14556,6 +14561,7 @@ body {
 }
 .about-section .text {
   color: #000;
+  padding-left: 80px;
 }
 .about-section .text p {
   font-size: 14px;
@@ -14563,6 +14569,7 @@ body {
 }
 .about-section .text .common-button {
   display: flex;
+  margin-bottom: 35px;
   margin-top: 38px;
 }
 .about-section .text .common-button .arrow {
@@ -14661,6 +14668,48 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contacts-section {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.contacts-section h2 {
+  font-size: 32px;
+  letter-spacing: 0.62px;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+.contacts-section .salon-card .image {
+  max-height: 150px;
+  overflow: hidden;
+}
+.contacts-section .salon-card .image img {
+  width: 100%;
+}
+.contacts-section .salon-card .name {
+  letter-spacing: 0.35px;
+  font-size: 18px;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+.contacts-section .salon-card .phone,
+.contacts-section .salon-card .clock {
+  display: flex;
+  margin-bottom: 18px;
+}
+.contacts-section .salon-card .phone .text,
+.contacts-section .salon-card .clock .text {
+  font-size: 14px;
+  letter-spacing: -0.39px;
+}
+.contacts-section .salon-card .adress {
+  display: flex;
+}
+.contacts-section .salon-card .adress .text {
+  font-size: 14px;
+  letter-spacing: -0.39px;
 }
 
 /*# sourceMappingURL=main.css.map */

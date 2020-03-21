@@ -1,0 +1,56 @@
+.contacts-section {
+    padding-left: 80px;
+    padding-right: 80px;
+
+    h2 {
+        @extend %medium-font;
+        font-size: 32px;
+        letter-spacing: 0.62px;
+        text-align: center;
+
+        margin-top: 34px;
+        margin-bottom: 20px;
+    }
+    .salon-card {
+        .image {
+            max-height: 150px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .name {
+            @extend %light-font;
+            letter-spacing: 0.35px;
+
+            font-size: 18px;
+            margin-bottom: 18px;
+            margin-top: 10px;
+        }
+        .phone,
+        .clock {
+            display: flex;
+
+            margin-bottom: 18px;
+
+            .text {
+                @extend %bold-font;
+                font-size: 14px;
+                letter-spacing: -0.39px;
+            }
+        }
+        .adress {
+            display: flex;
+
+            .text {
+                @extend %normal-font;
+                font-size: 14px;
+                letter-spacing: -0.39px;
+            }
+        }
+        // .icon,
+        // .text {
+        //     padding: 0;
+        // }
+    }
+}
