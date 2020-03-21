@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Volvo</title>
+<meta name="viewport" content="width=device-width">
 
 <!-- JQUERY -->
 <script

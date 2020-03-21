@@ -18,7 +18,7 @@
         color: #000000;
         font-size: 20px;
         line-height: 23px;
-        width: 754px;
+        max-width: 754px;
         margin: 0 auto;
         padding-bottom: 40px;
     }
@@ -43,11 +43,15 @@
         letter-spacing: 0.31px;
         color: #000000;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 18px;
+    }
+
+    .servise_row {
+        margin: 0;
     }
 
     @include media-breakpoint-down(lg) {
-        padding-bottom: 50px;
+        padding-bottom: 15px;
 
         h2 {
             padding-top: 30px;
@@ -59,23 +63,89 @@
 
         .servise {
             padding-left: 30px;
+            padding-bottom: 35px;
         }
     }
 
 
     @include media-breakpoint-down(md) {
-        padding-bottom: 50px;
+        padding-bottom: 15px;
 
         h2 {
-            padding-top: 30px;
+            padding-top: 23px;
+            font-size: 28px;
+            line-height: 33px;
+            letter-spacing: 0.54px;
         }
 
         .text {
-            padding-bottom: 20px;
+            padding-bottom: 30px;
+            letter-spacing: 0.35px;
+            font-size: 18px;
+            line-height: 23px;
         }
 
         .servise {
+            padding-left: 40px;
+            padding-bottom: 35px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 5px;
+
+        h2 {
+            padding-top: 27px;
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: 0.45px;
+        }
+
+        .text {
+            padding-bottom: 23px;
+            letter-spacing: 0.35px;
+            font-size: 18px;
+            line-height: 23px;
+            max-width: 504px;
+        }
+
+        .servise {
+            padding-left: 16px;
+            padding-bottom: 33px;
+        }
+
+        .servise_text {
             padding-left: 30px;
+            width: auto;
+            max-width: unset;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding-bottom: 35px;
+
+        h2 {
+            padding-top: 20px;
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: 0.45px;
+        }
+
+        .text {
+            padding-bottom: 23px;
+            letter-spacing: 0.27px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .servise {
+            padding-bottom: 15px;
+        }
+
+        .servise_text {
+            padding-left: 10px;
+            width: auto;
+            max-width: unset;
         }
     }
 }

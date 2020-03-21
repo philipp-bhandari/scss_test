@@ -14602,7 +14602,7 @@ body {
   color: #000000;
   font-size: 20px;
   line-height: 23px;
-  width: 754px;
+  max-width: 754px;
   margin: 0 auto;
   padding-bottom: 40px;
 }
@@ -14624,11 +14624,14 @@ body {
   letter-spacing: 0.31px;
   color: #000000;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
+}
+.services-section .servise_row {
+  margin: 0;
 }
 @media (max-width: 1199.98px) {
   .services-section {
-    padding-bottom: 50px;
+    padding-bottom: 15px;
   }
   .services-section h2 {
     padding-top: 30px;
@@ -14638,20 +14641,80 @@ body {
   }
   .services-section .servise {
     padding-left: 30px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 991.98px) {
   .services-section {
-    padding-bottom: 50px;
+    padding-bottom: 15px;
   }
   .services-section h2 {
-    padding-top: 30px;
+    padding-top: 23px;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.54px;
   }
   .services-section .text {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    letter-spacing: 0.35px;
+    font-size: 18px;
+    line-height: 23px;
   }
   .services-section .servise {
+    padding-left: 40px;
+    padding-bottom: 35px;
+  }
+}
+@media (max-width: 767.98px) {
+  .services-section {
+    padding-bottom: 5px;
+  }
+  .services-section h2 {
+    padding-top: 27px;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.45px;
+  }
+  .services-section .text {
+    padding-bottom: 23px;
+    letter-spacing: 0.35px;
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 504px;
+  }
+  .services-section .servise {
+    padding-left: 16px;
+    padding-bottom: 33px;
+  }
+  .services-section .servise_text {
     padding-left: 30px;
+    width: auto;
+    max-width: unset;
+  }
+}
+@media (max-width: 575.98px) {
+  .services-section {
+    padding-bottom: 35px;
+  }
+  .services-section h2 {
+    padding-top: 20px;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.45px;
+  }
+  .services-section .text {
+    padding-bottom: 23px;
+    letter-spacing: 0.27px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .services-section .servise {
+    padding-bottom: 15px;
+  }
+  .services-section .servise_text {
+    padding-left: 10px;
+    width: auto;
+    max-width: unset;
   }
 }
 
