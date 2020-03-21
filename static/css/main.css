@@ -14454,9 +14454,23 @@ body {
   src: url("/fonts/volvo_fonts_new/VolvoNovum-Bold.otf");
   font-weight: 600;
 }
+.about-section .text p {
+  font-family: "VolvoNovum";
+  font-weight: 300;
+}
+
+.about-section h3 {
+  font-family: "VolvoNovum";
+  font-weight: 400;
+}
+
 ._space-between {
   display: flex;
   justify-content: space-between;
+}
+
+._block {
+  display: block;
 }
 
 .common-button {
@@ -14512,6 +14526,32 @@ body {
   height: 12px;
 }
 
+.underline-link {
+  font-family: "VolvoNovum";
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.underline-link .link {
+  color: #2C7BCD;
+  text-decoration: underline;
+}
+
+.about-section {
+  background: rgba(0, 0, 0, 0.03) 0 0 no-repeat padding-box;
+}
+.about-section .image img {
+  width: 100%;
+}
+.about-section h3 {
+  font-size: 32px;
+  margin-top: 36px;
+}
+.about-section .text {
+  padding-left: 80px;
+}
+.about-section .text p {
+  font-size: 14px;
+}
 .car-card {
   width: 240px;
 }
