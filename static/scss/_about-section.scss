@@ -1,22 +1,44 @@
 .about-section {
   background: rgba(0, 0, 0, 0.03) 0 0 no-repeat padding-box;
-  .image img {
-    width: 100%;
+  .image {
+    background: no-repeat url("/images/about_sec/about_c2.png");
+    background-position: bottom;
+    // background-position-y: 0;
   }
   h3 {
     @extend %normal-font;
     font-size: 32px;
 
     margin-top: 36px;
+    margin-bottom: 12px;
   }
   .text {
-    padding-left: 80px;
+    color: #000;
+
     p {
       @extend %light-font;
       font-size: 14px;
+      max-width: 740px;
     }
     .common-button {
+      display: flex;
+
+      margin-top: 38px;
+
       .arrow {
+        background-image: url("/images/menu_cars/link_arrow.png"); // TODO поставить svg
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-top: 3px;
+        margin-left: 5px;
+        width: 8px;
+        height: 12px;
+      }
+      &:hover {
+        .arrow {
+          background-image: url("/images/menu_cars/white_link_arrow.png"); // TODO поставить svg
+        }
       }
     }
   }

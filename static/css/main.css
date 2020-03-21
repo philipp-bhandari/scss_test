@@ -14535,23 +14535,46 @@ body {
   color: #2C7BCD;
   text-decoration: underline;
 }
+.underline-link .link:hover {
+  color: #2C7BCD;
+}
 
 .about-section {
   background: rgba(0, 0, 0, 0.03) 0 0 no-repeat padding-box;
 }
-.about-section .image img {
-  width: 100%;
+.about-section .image {
+  background: no-repeat url("/images/about_sec/about_c2.png");
+  background-position: bottom;
 }
 .about-section h3 {
   font-size: 32px;
   margin-top: 36px;
+  margin-bottom: 12px;
 }
 .about-section .text {
-  padding-left: 80px;
+  color: #000;
 }
 .about-section .text p {
   font-size: 14px;
+  max-width: 740px;
 }
+.about-section .text .common-button {
+  display: flex;
+  margin-top: 38px;
+}
+.about-section .text .common-button .arrow {
+  background-image: url("/images/menu_cars/link_arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 8px;
+  height: 12px;
+}
+.about-section .text .common-button:hover .arrow {
+  background-image: url("/images/menu_cars/white_link_arrow.png");
+}
+
 .car-card {
   width: 240px;
 }
