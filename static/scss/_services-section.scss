@@ -25,7 +25,6 @@
 
     .servise {
         padding: 0;
-        padding-left: 80px;
         padding-bottom: 30px;
         display: inline-flex;
         flex-wrap: nowrap;
@@ -34,8 +33,7 @@
 
     .servise_text {
         display: inline-block;
-        max-width: 393px;
-        padding-right: 30px;
+        padding-right: 34px;
         padding-left: 10px;
         margin: 0;
         @extend %light-font;
@@ -44,10 +42,17 @@
         color: #000000;
         font-size: 16px;
         line-height: 18px;
+
+        span:hover {
+            cursor: pointer;
+            color: #2A76C5;
+            border-bottom: 1px solid #2A76C5;
+        }
     }
 
     .servise_row {
         margin: 0;
+        padding-left: 65px;
     }
 
     @include media-breakpoint-down(lg) {
@@ -62,8 +67,11 @@
         }
 
         .servise {
-            padding-left: 30px;
             padding-bottom: 35px;
+        }
+
+        .servise_row {
+            padding-left: 15px;
         }
     }
 
@@ -86,8 +94,11 @@
         }
 
         .servise {
-            padding-left: 40px;
             padding-bottom: 35px;
+        }
+
+        .servise_row {
+            padding-left: 25px;
         }
     }
 
@@ -110,15 +121,19 @@
         }
 
         .servise {
-            padding-left: 16px;
-            padding-bottom: 33px;
+            padding: 0 0 33px 0;
         }
 
         .servise_text {
-            padding-left: 30px;
+            padding-right: 0px;
             width: auto;
             max-width: unset;
         }
+
+        .servise_row {
+            padding-left: 15px;
+        }
+
     }
 
     @include media-breakpoint-down(xs) {
@@ -139,13 +154,22 @@
         }
 
         .servise {
-            padding-bottom: 15px;
+            padding: 0 0 15px 0;
         }
 
         .servise_text {
             padding-left: 10px;
+            padding-right: 0px;
+            letter-spacing: 0.27px;
+            font-size: 14px;
+            line-height: 18px;
             width: auto;
             max-width: unset;
         }
+
+        .servise_row {
+            padding-left: 0px;
+        }
+
     }
 }
