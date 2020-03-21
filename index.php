@@ -29,7 +29,7 @@ crossorigin="anonymous"></script>
 <?php
     include 'templates/block_about_company.html';
     include 'templates/block_services.html';
-    include 'templates/block_models.html';
+    // include 'templates/block_models.html';
     include 'templates/block_contacts.html';
 ?>
 

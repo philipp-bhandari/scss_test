@@ -57,14 +57,14 @@
             background-image: url("/images/about_sec/1_big.png");
             background-position: 5% 5%;
         }
-        h3 {
-            margin-top: 19px;
-            font-size: 28px;
-            line-height: 33px;
-            letter-spacing: 0.54px;
-        }
         .text {
             padding-left: 37px;
+            h3 {
+                margin-top: 19px;
+                font-size: 28px;
+                line-height: 33px;
+                letter-spacing: 0.54px;
+            }
             p {
                 line-height: 17px;
                 letter-spacing: 0.27px;
@@ -78,13 +78,59 @@
             .underline-link {
                 letter-spacing: -0.3px;
             }
+            .common-button {
+                padding: 13px 59px 15px;
+                .arrow {
+                    margin-top: 2px;
+                }
+            }
         }
     }
     @include media-breakpoint-down(sm) {
         .image {
             height: 292px;
-            background-image: url("/images/about_sec/1_big.png");
-            background-position: 5% 5%;
+        }
+        .text {
+            padding-left: 16px;
+
+            h3 {
+                font-size: 23px;
+                letter-spacing: 0.45px;
+                line-height: 28px;
+                max-width: 393px;
+                margin-bottom: 16px;
+                margin-top: 21px;
+            }
+            .last_p {
+                margin-bottom: 12.5px;
+            }
+            .common-button {
+                margin-top: 34px;
+            }
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        .image {
+            height: 155px;
+        }
+        .text {
+            padding-left: 15px;
+            h3 {
+                font-family: $mainFont;
+                font-weight: 500;
+
+                margin-top: 8px;
+                max-width: 247px;
+                margin-bottom: 8.5px;
+            }
+            .last_p {
+                margin-bottom: 9.5px;
+            }
+            .common-button {
+                margin-top: 33px;
+                max-width: 290px;
+                padding: 14px 103px 15px;
+            }
         }
     }
 }
