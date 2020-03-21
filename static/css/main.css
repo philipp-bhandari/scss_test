@@ -14454,7 +14454,7 @@ body {
   src: url("/fonts/volvo_fonts_new/VolvoNovum-Bold.otf");
   font-weight: 600;
 }
-.car-card .text .name2, .about-section .text p {
+.car-card .text .name2, .services-section .text, .about-section .text p {
   font-family: "VolvoNovum";
   font-weight: 300;
 }
@@ -14464,7 +14464,7 @@ body {
   font-weight: 400;
 }
 
-.models-section h2 {
+.models-section h2, .services-section h2 {
   font-family: "VolvoNovum";
   font-weight: 500;
 }
@@ -14576,6 +14576,36 @@ body {
 }
 .about-section .text .common-button:hover .arrow {
   background-image: url("/images/menu_cars/white_link_arrow.png");
+}
+
+.services-section h2 {
+  padding-top: 30px;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.62px;
+  color: #000000;
+  text-align: center;
+}
+.services-section .text {
+  text-align: center;
+  letter-spacing: 0.39px;
+  color: #000000;
+  font-size: 20px;
+  line-height: 23px;
+  width: 754px;
+  margin: 0 auto;
+  padding-bottom: 18px;
+}
+.services-section .col {
+  padding-bottom: 45px;
+}
+.services-section img {
+  padding-left: 30px;
+}
+.services-section .servise {
+  display: inline-block;
+  max-width: 387px;
+  padding-right: 30px;
 }
 
 .car-card {

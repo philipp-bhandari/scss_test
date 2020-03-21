@@ -1,0 +1,37 @@
+.services-section {
+    h2 {
+        @extend %medium-font;
+        padding-top: 30px;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.62px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .text {
+        @extend %light-font;
+        text-align: center;
+        letter-spacing: 0.39px;
+        color: #000000;
+        font-size: 20px;
+        line-height: 23px;
+        width: 754px;
+        margin: 0 auto;
+        padding-bottom: 18px;
+    }
+
+    .col {
+        padding-bottom: 45px;
+    }
+
+    img {
+        padding-left: 30px;
+    }
+
+    .servise {
+        display: inline-block;
+        max-width: 387px;
+        padding-right: 30px;
+    }
+}
