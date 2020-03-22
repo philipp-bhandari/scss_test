@@ -5,16 +5,19 @@
     h2 {
         @extend %medium-font;
         font-size: 32px;
+        line-height: 38px;
         letter-spacing: 0.62px;
         text-align: center;
 
         margin-top: 34px;
         margin-bottom: 20px;
     }
+
     .salon-card {
         padding-bottom: 118px;
 
         .arrowed-link {
+            @extend %light-font;
             position: absolute;
             bottom: 0;
             margin-bottom: 0;
@@ -22,16 +25,22 @@
             margin-bottom: 80px;
         }
         .image {
-            max-height: 150px;
+            height: 152px;
             overflow: hidden;
+            position: relative;
             img {
                 width: 100%;
+                position: absolute;
+                bottom: 0;
+                object-fit: cover;
+                height: 100%;
+                // transform: translate(-50%, -50%);
             }
         }
         .name {
             @extend %light-font;
             letter-spacing: 0.35px;
-
+            line-height: 22px;
             font-size: 18px;
             margin-bottom: 18px;
             margin-top: 10px;
@@ -63,4 +72,207 @@
             line-height: 15px;
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .salon-card {
+            padding-bottom: 85px;
+
+            .arrowed-link {
+                font-size: 13px;
+                line-height: 14px;
+                letter-spacing: 0.24px;
+
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 0;
+    
+                margin-bottom: 55px;
+
+                .arrow {
+                    margin-left: 10px;
+                    margin-top: 4px;
+                    width: 5.45px;
+                    height: 9.81px;
+                }
+            }
+
+            .image {
+                height: 111px;
+            }
+
+            .name {
+                letter-spacing: 0.31px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .phone,
+            .clock {
+                margin-bottom: 14px;
+    
+                .text {
+                    font-size: 12px;
+                    line-height: 13px;
+                    letter-spacing: -0.33px;
+                }
+            }
+
+            .adress .text {
+                font-size: 12px;
+                line-height: 13px;
+                letter-spacing: -0.33px;
+            }
+
+            .icon {
+                line-height: 14px;
+            }
+        }
+    }
+
+
+    @include media-breakpoint-down(md) {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 45px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 33px;
+            letter-spacing: 0.54px;
+        }
+
+        .salon-card {
+            padding-bottom: 26px;
+            display: flex;
+
+            .description_card {
+                display: inline-block;
+                width: 35%;
+            }
+
+            .arrowed-link {
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: 0.3px;
+
+                position: unset;
+                padding-top: 6px;
+                margin-bottom: 0;
+
+                .arrow {
+                    margin-left: 6px;
+                    margin-top: 6px;
+                    width: 6px;
+                    height: 11px;
+                }
+            }
+
+            .image {
+                height: 178px;
+                width: 60%;
+                display: inline-block;
+                margin-right: 44px;
+            }
+
+            .name {
+                letter-spacing: 0.35px;
+                font-size: 18px;
+                line-height: 22px;
+                margin-top: 0;
+            }
+
+            .phone,
+            .clock {
+                margin-bottom: 14px;
+    
+                .text {
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: -0.39px;
+                }
+            }
+
+            .adress .text {
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: -0.39px;
+            }
+
+            .icon {
+                line-height: 15px;
+            }
+        }
+    }
+
+
+    @include media-breakpoint-down(sm) {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+
+        h2 {
+            margin-top: 17px;
+            margin-bottom: 15px;
+        }
+
+        .salon-card {
+            display: flex;
+
+            .description_card {
+                width: 45%;
+            }
+
+            .image {
+                width: 45%;
+                margin-right: 20px;
+            }
+
+            .icon {
+                line-height: 14px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+
+        h2 {
+            margin-top: 36px;
+            margin-bottom: 11px;
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: 0.45px;
+        }
+
+        .salon-card {
+            display: block;
+
+            .description_card {
+                width: 100%;
+            }
+
+            .image {
+                width: 100%;
+                margin-right: 0px;
+            }
+
+            .name {
+                margin-top: 10px;
+            }
+
+            .arrowed-link {
+                padding-top: 14px;
+            }
+
+            .icon {
+                line-height: 14px;
+            }
+        }
+    }
+
 }
