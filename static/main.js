@@ -25,16 +25,11 @@ var __COMMON = (function() {
                         slidesPerView: 3
                     },
                     "@0.75": {
-                        slidesPerView: 2,
-                        spaceBetween: 20
+                        slidesPerView: 2
                     },
                     "@1.00": {
-                        slidesPerView: 3,
-                        spaceBetween: 40
-                    },
-                    "@1.50": {
                         slidesPerView: 4,
-                        spaceBetween: 50
+                        spaceBetween: 30
                     }
                 }
             });
