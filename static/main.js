@@ -21,13 +21,13 @@ var __COMMON = (function() {
                     prevEl: ".swiper-button-prev"
                 },
                 breakpoints: {
-                    "@0.00": {
+                    "768": {
+                        slidesPerView: 4
+                    },
+                    "992": {
                         slidesPerView: 3
                     },
-                    "@0.75": {
-                        slidesPerView: 2
-                    },
-                    "@1.00": {
+                    "1200": {
                         slidesPerView: 4,
                         spaceBetween: 30
                     }
