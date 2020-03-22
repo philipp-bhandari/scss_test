@@ -1,6 +1,6 @@
 .car-card {
     img {
-        width: 100%;
+        max-width: 100%;
     }
     .text * {
         flex-direction: column;
@@ -19,13 +19,14 @@
 
             margin-top: 11px;
             margin-left: 4px;
-            margin-right: 14px;
+            margin-right: 0;
         }
         .price {
             @extend %normal-font;
 
             margin-top: 3px;
             font-size: 15px;
+            margin-left: 14px;
         }
     }
     .links {
@@ -39,7 +40,6 @@
     position: relative;
     .container-fluid {
         max-width: 1226px;
-        overflow: hidden;
     }
 
     background: rgba(0, 0, 0, 0.03) 0 0 no-repeat padding-box;
@@ -54,13 +54,19 @@
     .car-slider {
         width: 100%;
         height: 350px;
+        overflow: hidden;
         .swiper-button {
+            top: 45%;
+
             &:after {
                 font-size: 24px;
                 color: #000;
             }
             &-next {
-                right: 24px;
+                right: 30px;
+            }
+            &-prev {
+                left: 30px;
             }
         }
         .swiper-slide {
@@ -71,48 +77,184 @@
 
         padding-bottom: 35px;
     }
-    @include media-breakpoint-down(md) {
-        .container-fluid {
-            max-width: 700px;
-        }
+    @media (min-width: 1200px) and (max-width: 1300px) {
         .car-slider {
-            height: 234px;
-        }
-        .car-card {
-            max-width: 144px;
-
-            .text {
-                .name {
-                    font-family: "VolvoBroadPro";
-                    font-size: 23px;
-                    letter-spacing: 0.44px;
-                    line-height: 23px;
+            .swiper-button {
+                &-next {
+                    right: 5px;
                 }
-                .name2 {
-                    font-size: 6px;
-                    letter-spacing: -0.16px;
-
-                    margin-top: 2px;
-                    margin-left: 2px;
-                    margin-right: 8px;
-                }
-                .price {
-                    font-size: 9px;
-                    letter-spacing: 0.16px;
-                    margin-top: -3px;
+                &-prev {
+                    left: 5px;
                 }
             }
         }
+    }
+    @include media-breakpoint-down(lg) {
         .links {
-            font-size: 12px;
-            letter-spacing: 0.23px;
-            height: 15px;
-
+            .link {
+                font-size: 15px;
+                letter-spacing: 0.29px;
+                line-height: 18px;
+            }
             .arrowed-link {
+                margin-bottom: 14px;
                 .arrow {
-                    margin-top: 4px;
-                    margin-left: 6px;
+                    margin-top: 5px;
                 }
+            }
+        }
+        .car-slider {
+            .swiper-button {
+                &-next {
+                    right: 18px;
+                }
+                &-prev {
+                    left: 18px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .container-fluid {
+            max-width: 90%;
+        }
+        h2 {
+            font-size: 28px;
+            letter-spacing: 0.54px;
+            line-height: 33px;
+            padding-top: 25px;
+            margin-bottom: 19px;
+        }
+
+        .car-slider {
+            height: unset;
+
+            max-height: 250px;
+            padding-bottom: 30px;
+
+            .swiper-button {
+                &:after {
+                    font-size: 14px;
+                }
+                &-next {
+                    right: 13px;
+                }
+                &-prev {
+                    left: 13px;
+                }
+            }
+
+            .car-card {
+                max-width: 144px;
+                min-height: 190px;
+
+                .text {
+                    .name {
+                        font-family: "VolvoBroadPro";
+                        font-size: 23px;
+                        letter-spacing: 0.44px;
+                        line-height: 23px;
+                    }
+                    .name2 {
+                        font-size: 6px;
+                        letter-spacing: -0.16px;
+
+                        margin-bottom: 8px;
+                        margin-top: 2px;
+                        margin-left: 2px;
+                        margin-right: 0;
+                    }
+                    .price {
+                        font-size: 9px;
+                        letter-spacing: 0.16px;
+                        margin-top: -3px;
+                        margin-bottom: 8px;
+                        margin-left: 8px;
+                    }
+                }
+                .links {
+                    margin-top: 12px;
+
+                    .arrowed-link {
+                        height: 15px;
+                        margin-bottom: 10px;
+
+                        .link {
+                            font-size: 12px;
+                            letter-spacing: 0.23px;
+                            line-height: 15px;
+                        }
+                        .arrow {
+                            margin-top: 4px;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        h2 {
+            font-size: 23px;
+            letter-spacing: 0.45px;
+            line-height: 28px;
+            padding-top: 15px;
+        }
+        .car-slider {
+            padding-bottom: 20px;
+            .car-card {
+                max-width: 125px;
+            }
+            .swiper-button {
+                &-next {
+                    right: 12px;
+                }
+                &-prev {
+                    left: 12px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+        }
+        h2 {
+            padding-top: 40px;
+        }
+        .car-slider {
+            max-height: 937px;
+            .car-card {
+                max-width: 320px;
+                margin-left: 15px;
+                .links {
+                    flex-direction: row;
+                }
+                .text {
+                    margin-bottom: 6px;
+                    .name {
+                        font-size: 40px;
+                        letter-spacing: 0.78px;
+                        line-height: 40px;
+                    }
+                    .name2 {
+                        font-size: 10px;
+                        margin-top: 4px;
+                        margin-left: 4px;
+                        margin-right: 0;
+                    }
+                    .price {
+                        font-size: 15px;
+                        margin-bottom: -6px;
+                        margin-left: 14px;
+                    }
+                }
+            }
+            .swiper-button {
+                display: none;
             }
         }
     }

@@ -3,7 +3,7 @@ var __COMMON = (function() {
     var _init = {
         commonFunctions: function() {
             functions.initDlMenu();
-            functions.initModelsBlockSwiper(".car-slider");
+            window.fSlider = functions.initModelsBlockSwiper(".car-slider");
         }
     };
     var functions;
@@ -21,15 +21,24 @@ var __COMMON = (function() {
                     prevEl: ".swiper-button-prev"
                 },
                 breakpoints: {
+                    "320": {
+                        direction: "vertical",
+                        slidesPerView: 4,
+                        allowTouchMove: false
+                    },
+                    "576": {
+                        slidesPerView: 3
+                    },
                     "768": {
-                        slidesPerView: 4
+                        slidesPerView: 4,
+                        spaceBetween: 44
                     },
                     "992": {
                         slidesPerView: 3
                     },
                     "1200": {
                         slidesPerView: 4,
-                        spaceBetween: 30
+                        spaceBetween: 0
                     }
                 }
             });

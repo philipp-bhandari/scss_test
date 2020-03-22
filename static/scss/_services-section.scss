@@ -23,7 +23,7 @@
         padding-bottom: 40px;
     }
 
-    .servise {
+    .service {
         padding: 0;
         padding-bottom: 30px;
         display: inline-flex;
@@ -31,7 +31,7 @@
         align-items: center;
     }
 
-    .servise_text {
+    .service_text {
         display: inline-block;
         padding-right: 34px;
         padding-left: 10px;
@@ -45,12 +45,12 @@
 
         span:hover {
             cursor: pointer;
-            color: #2A76C5;
-            border-bottom: 1px solid #2A76C5;
+            color: #2a76c5;
+            border-bottom: 1px solid #2a76c5;
         }
     }
 
-    .servise_row {
+    .service_row {
         margin: 0;
         padding-left: 65px;
     }
@@ -66,15 +66,14 @@
             padding-bottom: 20px;
         }
 
-        .servise {
+        .service {
             padding-bottom: 35px;
         }
 
-        .servise_row {
+        .service_row {
             padding-left: 15px;
         }
     }
-
 
     @include media-breakpoint-down(md) {
         padding-bottom: 15px;
@@ -93,11 +92,11 @@
             line-height: 23px;
         }
 
-        .servise {
+        .service {
             padding-bottom: 35px;
         }
 
-        .servise_row {
+        .service_row {
             padding-left: 25px;
         }
     }
@@ -120,20 +119,19 @@
             max-width: 504px;
         }
 
-        .servise {
+        .service {
             padding: 0 0 33px 0;
         }
 
-        .servise_text {
+        .service_text {
             padding-right: 0px;
             width: auto;
             max-width: unset;
         }
 
-        .servise_row {
+        .service_row {
             padding-left: 15px;
         }
-
     }
 
     @include media-breakpoint-down(xs) {
@@ -153,11 +151,11 @@
             line-height: 18px;
         }
 
-        .servise {
+        .service {
             padding: 0 0 15px 0;
         }
 
-        .servise_text {
+        .service_text {
             padding-left: 10px;
             padding-right: 0px;
             letter-spacing: 0.27px;
@@ -167,9 +165,8 @@
             max-width: unset;
         }
 
-        .servise_row {
+        .service_row {
             padding-left: 0px;
         }
-
     }
 }
